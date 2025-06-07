@@ -1,0 +1,63 @@
+{
+  "name": "ms-construct-argo-cd",
+  "version": "0.1.0",
+  "description": "A reusable AWS CDK construct for ArgoCD",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "imports": {
+    "#src/*": "./src/*",
+    "#types/*": "./types/*",
+    "#constants/*": "./constants/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nickthiru2/ms-construct-argo-cd.git"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "argo-cd",
+    "construct",
+    "infrastructure"
+  ],
+  "author": "Nick Thiru <nick.thiru@gmail.com>",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "registry": "https://ms-324093102745.d.codeartifact.us-east-1.amazonaws.com/npm/argo-cd-construct/"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "prepare": "npm run build",
+    "publish:artifact": "npm publish"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "22.7.9",
+    "aws-cdk-lib": "2.199.0",
+    "constructs": "^10.0.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "~5.6.3"
+  },
+  "peerDependencies": {
+    "aws-cdk-lib": "2.199.0",
+    "constructs": "^10.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "lib/**/*.js",
+    "lib/**/*.d.ts",
+    "types/**/*.ts",
+    "constants/**/*.ts",
+    "src/**/*.ts",
+    "src/**/*.js",
+    "types/**/*.js",
+    "constants/**/*.js"
+  ]
+}
